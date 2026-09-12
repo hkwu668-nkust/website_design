@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages 測試網頁</title>
+  <style>
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #222;
+    }
+    header {
+      background: #24292f;
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    button {
+      margin-top: 16px;
+      padding: 10px 18px;
+      border: 0;
+      border-radius: 8px;
+      background: #0969da;
+      color: white;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GitHub Pages 測試成功！</h1>
+    <p>這是一個簡單的 HTML 測試頁面</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Hello GitHub 👋</h2>
+      <p>如果你可以看到這個頁面，代表 HTML 檔案已經成功上傳並可以正常顯示。</p>
+      <button onclick="showMessage()">點我測試 JavaScript</button>
+      <p id="message"></p>
+    </div>
+
+    <footer>© 2026 GitHub Pages Test</footer>
+  </main>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "JavaScript 也正常執行！";
+    }
+  </script>
+</body>
+</html>
